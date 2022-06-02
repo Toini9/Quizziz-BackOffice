@@ -39,8 +39,8 @@ dependencies:
 
 hooks:
     build: |
-      composer install
-      composer dump-autoload
+      set -e
+      cp .env-exemple .env
     deploy: |
       set -e
 
